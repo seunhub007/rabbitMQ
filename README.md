@@ -1,9 +1,13 @@
-# RabbitMQ installation
-## Pull rabbitmq image from dockerhub
-## Run it as a container
-## Exec into the container
-## rabbitmq -plugins
-## exit container
+## RabbitMQ installation
+### Pull rabbitmq image from dockerhub
+- docker pull rabbitmq
+### Run it as a container
+- docker run --rm -d --hostname my-rabbit -p 5672:5672 -p 15672:15672 --name some-rabbit rabbitmq:3-management
+### Exec into the container
+- docker exec -it some-rabbit /bin/bash
+- apt-get update && apt-get install -y curl
+### rabbitmq -plugins
+### exit container
 1. curl -O https://raw.githubusercontent.com/rabbitmq/rabbitmq-management/v3.8.0/bin/rabbitmqadmin
 2. chmod +x rabbitmqadmin
 
