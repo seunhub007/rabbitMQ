@@ -27,4 +27,7 @@
 11. rabbitmqadmin --host=localhost --port=15672 --username=guest --password=guest declare binding source=amq.direct destination_type="queue" destination=seunqueue routing_key=seun_routing_key
    ### Publish message
 12. rabbitmqadmin --host=localhost --port=15672 --username=guest --password=guest publish exchange=amq.direct routing_key=seun_routing_key payload="Hello, RabbitMQ!"
+    ### To show the messages published
 13. rabbitmqadmin --host=localhost --port=15672 --username=guest --password=guest get queues
+    ### to show the plugin list
+14. docker exec -it rabbitmq rabbitmq-plugins list
