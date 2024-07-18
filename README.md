@@ -17,6 +17,7 @@
 5. apt-get install -y python3
    ### Declare Exchange
 6. rabbitmqadmin --host=localhost --port=15672 --username=guest --password=guest declare exchange name=amq.direct type=direct
+   ### Run Rabbitmq activities
 7. rabbitmqctl list_exchanges
 8. rabbitmqctl list_queues
 9. rabbitmqctl list_users
